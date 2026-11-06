@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Cosa cucino</title>
+<link id="faviconLink" rel="icon" type="image/png" href="data:image/png;base64,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">
+<link id="appleTouchLink" rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAABmJLR0QA/wD/AP+gvaeTAAAQ8UlEQVR4nO3da5QU5ZkH8P9T09XTPdMMIOAgwwkzMFwGkPuKqCPBIBFMzAUSzNkFghglHpfdAzEmroArolExxDWSmCOOyWKOHCDZXQKL5IjieIBNYJE7jgwwG2Y4csswNNOX6q5nPwxDGGaqp69VVNXz+zTdb9VbT895/13V3VVvESzGzKqmNY9QWBnMwBAmDCKgDEA3EArBXAhQN6vrFCljgBoJ3MigiwBfIOBTHfQJoO9TVf9BIrpsdZFk9gaZmTSteRwRTYJOk0CoBFBodh3CcnEAO0C8MR5X/tPn89VYUYRpAQiHw+V5xLOIMItb3uGFuNZREL/p8URWE3VvNGujOQ0AM1M8EvkKK/wEgLtyvT3hCJcJ+Pc4K/+Wn59/JNcby8mAZGYlHonczwovATAuF9sQjqeDaIMnxk+Q31+Xq41kPQCa1jwBrKwCeFS2+xau1AzGTz1e34tEFMx251kLAHNj95jmfQagxwEo2epXCABgoI4I31VV/4fZ7DcrAdC08H1g/g2AXtnoTwgDOkArPWr+00QUzkaHGQWAmT2xaHgZCE9m2pcQKTgQ1+nrPp/veKYdpT1omS/1imme36Hl2x0hzHYOhBmq6t+eSSdpHatzKNQvpnmqIYNfWKcnGH+MRsOPZNJJygGIRCJDtTxUAxicyYaFyAKVwG9oWmhxuh2kdAgUiUSGK6RvB3BTuhsUIicIi1XV/1yqqyW9B+BQqJ+i6Fsgg1/ciBjLNC20NNXVktoDMDf1jGlqNYAhKRcmhIkY9LjX63s92eU7DQAze2Ja+APIB15hDzEQfVVVfVuSWbjTQ6BYNLwMMviFfXjAvDYSidyazMIJ9wBXfuHdBDm1QdgMAbV5qm8METUlWs5wYDM39bhyeoMMfmE7DAzQtPBrnS1nOLjjmvoi5NweYWMEzI5FQn/fyTLttZzSTB9D3v2F/TV5NL2CCgsbOmpsN8CZOa/lfH4Z/MIRijRVWWHU2G6Qx6OhGXIxi3ASAr6jaaF7DNr+hpkppoX2AjTSnNKEMM0Rj+obQUSxa59ssweIRyJfkcEvHKpC08L/cP2TbfYAWjT0EYBK00oSwkQEHMtTfRXX7gWu7gHC4XA55Bdf4WAMlMe18Heufe5qAPKIZ0EuaxQOx8CT1z5WgJYPv0Rod3wkhAMNi0abb299oACApjWPY6C/dTUJYR4F9PDf/gZARJOsK0cIczEwk5kDQOtnAJ06/JFACIcKxKPNkwFAYWYVhDutrkgIU5EyFQAUTWseASBgcTlCmEoH7gMARWFFpjcRrkPAF8Lh8GCF5UJ34VIe0kcqTDLBlXAnBg1XSG5XJNxKoVs9AIqsriNXdu3aibfeWo0TJ07i5uKbMWP6dHzjG9PbLBONRlFVtRpbt25FMBjEiBEj8P35j6H/gAFtljteW4tf/HIV9u/fj0AggClTpmDu3Hnwer1mvqSUMDMOHz6Mbdvex/HjtTh79hzOnj1jm/pzjlFKmhaqB6OP1bVk265dO/HUUz+Gruttnp/30MOYNXv21ceLF/8Lqqur2ywTCATwxhu/QklJXwBAff0pPProIwgG296gpLKyEsuWLc/RK0ifruvYuPG/sHbtWjQ01Bsud6PWbxYGTipgdLG6kFyoqnqr3eAHgHd++w7C4ZZ7K9TU1LQb/AAQDAbx7tq1Vx+/u3Ztu8EPANXV1aipseTunoZOnjyBBQsex8qVP004+IEbs34zEbibAofeo7e2trbD58PhEBrq668sc8x4/WOfdfh3++0Y92G23bv/jPnzH8XBgweTXuf4iYzvMWFjVKTAoRe/x2IxwzbtSltM05JaP1Ffifow084dO/DUUz++undLVvHNxTmqyBYUj9UViMzV1NRgydIl0LRoSuuVl5dj5Eh3XwHryHd/NwkGg3jmmaUpD/4xY8bghZ+8BEVx9xCQPYDN/exnnX/Y9Xg8mHj3RNx+xx3oXVyM3rf0Qa+ePU2q8MYmAbCxgwcP4v3330+4TGlpGZYsXtLudw3RQgJgU8yMVat+DmY2XKa8vByvvLISXbt2NbEye3H3AaCN7dq1C4cPHzZsLyrqgueWPy+DvxMSAJvasGF9wvZ/+ueF6F3c26Rq7EsCYEMnT57Anj27DduHDh2KeybJVa7JkADY0ObNmxIe+z/6yHwQyRRPyZAA2AwzY/uH2w3bBw4ciJGjZHLvZEkAbObQoUP4/Mznhu3f/OZ0wzbRngTAZj7+uP3Zq61U1Yu7755oYjX2JwGwmd27/2zYNn78bSgsdOTJvTkjAbCRxsZGw9O8AeCuu2Rm+1RJAGxk7yd7E377M3bc35lYjTNIAGzk8KFDhm39+pXKCW5pkADYyKefHjVsGyVffaZFAmATuq6jpsb40swhg2V6p3RIAGzi9OkGhMMhw/YhFRUmVuMcEgCbqD9lfNGLqqro16/UvGIcRAJgE/UNpwzbbrmlj+svbUyX/Ndsor6hwbCtpG+JiZU4iwTAJurrjQ+BSkokAOmSANhEos8AJX0cN7OlaSQANqDrOk6fPm3YXtKnr4nVOIsEwAbOX7iQcN4fOQRKnwTABpouNiZs79mrl0mVOI8EwAYuXmwybMvPz0d+fr6J1TiLBCAJ0Whq0w5mW1OTcQC6Fjn2/iamcF8AOPUB/ddG40OQRJcnZsulpouGbV2KZN6fTLgvAAScO3c2pVUi4Yhh2/nzFzKtqFMXE+0BusoeIBOODUCiaUHyff6U+lIU47569sj9OfhNCfYARXIIlBHHBsDvNx7kCcZzh1RVNWwbUpH72yw3NV0ybJNDoMw4NgDdb7rJsK0xwTH99XRdRyhkfBqyGRehRyPGh2AFBantzURbjg3AzQm+Gz9x8kTS/Zw69ZeEH5qLi3N/i6FEt2hSPcZ7J9E5xwag/4Byw7ajR44k3c/Ro8aXIfr9BSg2YQJaLW4cAI9HZrjPhHMDUFZm2HbgwAFcSPLbmw8/+NCwrbS01JTz8OMJ9gASgMw4NgCjRhpfJK7rOn777jud9lFbewy7/men8TZGmXODOS3BnSglAJlxbABK+vbFwEGDDNt/t2EDjh41PhSKxWJ49tl/7fBm263umfSljGpMViwWN2zz5EkAMuHYAACJB6iu69i0ebNhe13dSdTV1Rm2dxawbIrFjPcAqioByISjA/DAAw+gR48eaa0bjxu/8wPAnDnfTavfdCSaDQ5yH4CMODoAhYWFmDfv4az3O2zYMNw7+d6s92vE6/Uatll9op7dOToAAHDffVMxfvztWesvEAhg0aIfmHoHlkSnOzc3N5tWhxM5PgCKouDZZ5dh9OjRGfdVUFCAl15agf79zb3nbvdu3Q3bzp0/b2IlzuP4AAAt76DPP/8CJk+enHYfJSV98fLLr2Do0KFZrCw5PXoZn3BXf+ovJlbiPK4IANDyq+3TTy/BypWvoqysf9Lr+Xx+zJ37EKqq3sawYcNyWKGxviXGF71/9llNwq9qRWKu+w5t9OjRqKp6G7W1x7D6zTexY+eODpfr2rUrnvzRjzB2zDjLLzkcOND469ZLl4I4cuSIZeG0O9fsAa43YEA5JkyYYNheXFyMOybcafngB4CyslL4/QWG7Vve22JaLU7j2gDYiap6MXbsGMP297b8N06fNp46URiTANjExC9OMmyLRqN47rlliCS4bkB0TAJgE1+cOBHdu3czbD906BAW/WAhzpw9Y2JV9icBsAlV9eLb33ow4TIHDxzA7Fmz8PPXX8OxY8dMqszeXPctkJ3N+NYMbPzDRjQ0GE+UGw6HsH7dOqxftw5FRV1QVtYfpaVlKCgsgEIKAoWBlgWJ0CVQiFtHjES/fv1MegU3HgmAjaiqF4sXL8GCBf+YcK7QVk1Nl7Bv3z7s27fPcJlFCxe5OgByCGQzFRUVWLhwodwRJktkD2BDU6dOAwCsWPEy4nHji2VE5+RtxKamTp2GV199Db1NuCjfySQANjZ8+HC8/evf4KG58xAIBKwux5YkADbn8/kwe84crF+3AT/84ZO47bbbEs5kJ9qSzwAO4fP7MW3a/Zg27X5omoa6ujqcOHkCx4/XYvOmTbh40Xh+UTeTADiQqqooLy9HeXk5gHuxZ/duCYABOQQSriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQriYBEK4mARCuJgEQrqYAiFtdhFU8qmrc5vGYWEluJXotif4HLqArAF+yugqrDBhQbtxWPtDESnIr0WtJ9D9wgaDCoEarq7DKoEGDUFlZ2e75QCCAB2fOtKCi3Hhw5kwEAoF2z1dWVmLQoEEWVHSDIFwiLdr8CUAjra7FKtFoFFVVq7F161YEg0GMGDEC35//GPoPGGB1aVl1vLYWv/jlKuzfvx+BQABTpkzB3Lnz4PV6rS7NSkdJ05r/A0xfs7oSISzwJwU6HbS6CiGswMBxhcAHrC5ECCsQ41MlxsonVhcihBUIqCEAiEZDdQR8weqChDATQx+rAIACvGd1MUKYLKiqBQdaToVg3mJxMUKYi/EREWkKAOR5/VsBBC0uSQjzKPwBcOVkOCIKErDW2oqEMA8zbwOuORuUid+yrhwhzEPAMVUt2AtcEwBVLdgB4JBlVQlhEiasISIGrrsegICXrClJCNNwPE5rWh9QmxZmT1wLH2HA1efICkerVr3+u1sftN0DEMV04HnzaxLCHKTQi20eX78AM3tiWng/gArTqhLCFLTXo+aPbT3+Bzq4JpiIYiDMB8DXtwlhZ8T68msHP2BwUbyq+j9i4F1zyhLCDLQnz+v/fbtnjRbny5f7xFTlMICuOa1LiNzTGTzB6y340/UNhtOiUGFhAzF/L7d1CZF7BPyqo8F/pS2xaDT0NgFzsl+WEKb43KNGhxJ1vdBRY6cBYObCmBbeA2Bw1ksTIrd0EE1VVd9WowU6nRmOiC7rrMwA0JTV0oTINcYLiQY/kMQeoJWmhb8M5j8AcM6UacLJtntU35eIKOHMh0nPDaqqvvcYmJ95XULk3GceNfbtzgY/kOLkuF6vfzUIS9OvS4gcI5zyxDGZqMuZZBZPeXZoVfU/C8LTqVcmRM5d0HVlKvn9/5fsCmlNj66q/uUgfiKddYXICcZpRt49+fn5KU30lvSH4I5Eo6HvEfA6AFfPsS0sd9QTx5dTeedvlVEAAEDTQhPBWA+gZ6Z9CZGG7R5Vm05UdD6dlTO+Q4yq+rfHdRoP8P5M+xIiBToYy1u+6kxv8ANZ2AO0YmZfLBpZBuKFkFsvidz6HESzVNX3x0w7yloAWmla8wQw/RqAc26xIm4UzMAaVdUWEhWdy0aHWQ8AADBzIBYNPwHCIgCFudiGcBvaw9AfMzqrM+1es9nZ9fjy5T5xVVnKwDwAebnclnCsAwSsyFN97yTzy26qchqAVpFIZEge6QsYmAWg/c2qhGiLAVSTQi/n5eVvuv4yxmwyJQCtmP/aLRbLfwhM8wAMNXPb4sZHwDEmrInHaY3P56s1aZvWCIfDA/Py9K+B6asA7oQcIrlREIxqKLyNmbd5vYX/a3YBlgXgWsxcoGmh4YAySoE+kkGDAbqJwN0Y1A3g7lbXKNJyEYQgGEEAjQycIEYNgY/qxDWqWrCPiGJWFvj/EYXuWCW4JXsAAAAASUVORK5CYII=">
+<link id="manifestLink" rel="manifest">
+<meta name="theme-color" content="#FBFAF7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBFAF7;
+    --panel:#FFFFFF;
+    --ink:#3B3A35;
+    --ink-soft:#9A9481;
+    --line:#E9E5DC;
+    --sage:#8FA6A3;
+    --sage-dim:#EAEEED;
+    --sage-deep:#5C726E;
+    --clay:#C98D6E;
+    --clay-dim:#F5E7DF;
+    --shadow: 0 1px 2px rgba(59,58,53,0.05), 0 6px 20px rgba(59,58,53,0.06);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Work Sans',system-ui,sans-serif;
+    -webkit-tap-highlight-color:transparent;
+    padding-bottom:100px;
+  }
+  ::selection{background:var(--clay-dim);}
+  button{font-family:inherit;}
+
+  header.top{
+    position:sticky; top:0; z-index:20;
+    background:var(--bg);
+    padding:22px 18px 14px;
+  }
+  .brand{ display:flex; align-items:baseline; justify-content:space-between; gap:10px; }
+  .brand h1{
+    font-family:'Fraunces'; font-style:italic; font-weight:600;
+    font-size:27px; margin:0; color:var(--ink); line-height:1;
+  }
+  .brand p{ margin:5px 0 0; font-size:12.5px; color:var(--ink-soft); }
+  .sync-dot{
+    width:7px; height:7px; border-radius:50%; background:var(--sage);
+    display:inline-block; margin-right:5px; vertical-align:middle;
+  }
+  .search{
+    margin-top:14px; display:flex; align-items:center; gap:9px;
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:11px; padding:10px 13px;
+  }
+  .search input{ border:none; outline:none; background:transparent; font-size:14.5px; color:var(--ink); width:100%; font-family:'Work Sans'; }
+  .search svg{ flex:none; opacity:.4; }
+  .legend{
+    display:flex; gap:16px; margin-top:9px; font-size:11.5px; color:var(--ink-soft);
+  }
+  .legend span{ display:flex; align-items:center; gap:5px; }
+  .legend-dot{ width:9px; height:9px; border-radius:50%; display:inline-block; }
+
+  .week-card{
+    margin:14px 18px 4px; background:var(--panel); border:1px solid var(--line);
+    border-radius:14px; padding:15px 17px; position:relative; box-shadow:var(--shadow);
+  }
+  .week-card::before{
+    content:''; position:absolute; left:0; top:14px; bottom:14px; width:3px;
+    background:var(--sage); border-radius:3px;
+  }
+  .week-card .head{ display:flex; align-items:center; justify-content:space-between; }
+  .week-card h2{ font-family:'Fraunces'; font-style:italic; font-weight:600; font-size:17px; margin:0; color:var(--ink); }
+  .week-card .reset{
+    border:none; background:none; color:var(--ink-soft); font-size:11.5px;
+    text-decoration:underline; cursor:pointer; padding:4px;
+  }
+  .week-list{ display:flex; flex-wrap:wrap; gap:7px; margin-top:11px; }
+  .week-chip{
+    display:flex; align-items:center; gap:6px; background:var(--sage-dim); color:var(--sage-deep);
+    border-radius:9px; padding:6px 6px 6px 11px; font-size:13px; font-weight:500;
+  }
+  .week-chip button{
+    border:none; background:rgba(92,114,110,0.12); color:var(--sage-deep);
+    width:17px; height:17px; border-radius:50%; font-size:12px; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .week-chip .count-badge{
+    background:var(--sage-deep); color:#fff; font-size:10.5px; font-weight:700;
+    border-radius:50%; width:16px; height:16px; display:flex; align-items:center; justify-content:center; flex:none;
+  }
+  .work-card .week-chip .count-badge{ background:var(--clay); }
+  .week-empty{ color:var(--ink-soft); font-size:13.5px; margin-top:9px; }
+
+  .work-card::before{ background:var(--clay); }
+  .work-card h2{ color:var(--ink); }
+  .work-card .week-chip{ background:var(--clay-dim); color:var(--clay); }
+  .work-card .week-chip button{ background:rgba(201,141,110,0.18); color:var(--clay); }
+
+  .marker-group{ display:flex; align-items:center; gap:6px; flex:none; }
+
+  .suggest-card::before{ background:var(--ink); }
+  .suggest-item{
+    background:var(--bg); border:1px solid var(--line); border-radius:12px;
+    padding:12px 14px; margin-top:10px;
+  }
+  .suggest-item h4{ font-family:'Fraunces'; font-style:italic; font-weight:600; font-size:15.5px; margin:0 0 3px; color:var(--ink); }
+  .suggest-item .s-cat{ font-size:10.5px; color:var(--sage-deep); background:var(--sage-dim); border-radius:20px; padding:2px 8px; display:inline-block; margin-bottom:6px; }
+  .suggest-item .s-ing{ font-size:12.5px; color:var(--ink-soft); margin:0 0 8px; line-height:1.5; }
+  .suggest-item .s-steps{ font-size:12.5px; color:var(--ink); line-height:1.6; white-space:pre-wrap; margin-bottom:10px; }
+  .suggest-item .s-actions{ display:flex; gap:8px; }
+  .suggest-item .s-actions button{ flex:1; padding:8px; border-radius:8px; border:none; font-size:12.5px; font-weight:600; cursor:pointer; font-family:'Work Sans'; }
+  .s-add{ background:var(--sage); color:#fff; }
+  .s-skip{ background:var(--clay-dim); color:var(--clay); }
+  .s-added{ font-size:12px; color:var(--sage-deep); font-weight:600; }
+
+  main{ padding:4px 18px 0; }
+
+  .category{ margin-top:22px; }
+  .category summary{
+    list-style:none; display:flex; align-items:center; gap:8px; cursor:pointer;
+    padding:2px 0 9px; border-bottom:1px solid var(--line);
+  }
+  .category summary::-webkit-details-marker{ display:none; }
+  .cat-title{ font-family:'Fraunces'; font-style:italic; font-weight:600; font-size:19px; color:var(--ink); }
+  .cat-count{ font-size:11px; color:var(--ink-soft); }
+  .chev{ margin-left:auto; opacity:.4; width:14px; height:14px; transition:transform .15s; }
+  .category[open] .chev{ transform:rotate(180deg); }
+
+  .recipe-list{ padding:2px 0 2px; }
+  .recipe{ display:flex; align-items:center; gap:9px; padding:12px 0; border-bottom:1px solid var(--line); }
+  .recipe:last-child{ border-bottom:none; }
+  .name-wrap{ flex:1; min-width:0; cursor:pointer; }
+  .name{ font-size:14.5px; font-weight:400; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .rlink{ font-size:11.5px; color:var(--clay); margin-top:2px; }
+  .edit-btn{ flex:none; border:none; background:none; opacity:.3; padding:6px; color:var(--ink); cursor:pointer; }
+  .marker-plain{ flex:none; width:23px; height:23px; border-radius:50%; border:1.5px solid #DAD5C8; background:transparent; cursor:pointer; padding:0; }
+
+  .stepper{ display:flex; align-items:center; gap:0; background:var(--sage-dim); border-radius:20px; padding:2px; flex:none; }
+  .stepper button{ width:21px; height:21px; border-radius:50%; border:none; background:var(--panel); color:var(--sage-deep); font-size:13px; font-weight:700; cursor:pointer; display:flex; align-items:center; justify-content:center; padding:0; }
+  .stepper .count{ width:22px; text-align:center; font-size:13px; font-weight:700; color:var(--sage-deep); }
+  .stepper-work{ background:var(--clay-dim); }
+  .stepper-work button{ color:var(--clay); }
+  .stepper-work .count{ color:var(--clay); }
+
+  .empty-state{ text-align:center; color:var(--ink-soft); font-size:14px; padding:40px 20px; }
+
+  .fab{
+    position:fixed; right:18px; bottom:22px; width:56px; height:56px; border-radius:50%;
+    background:var(--ink); color:var(--bg); border:none; box-shadow:0 8px 20px rgba(59,58,53,0.3);
+    font-size:27px; cursor:pointer; display:flex; align-items:center; justify-content:center; z-index:30;
+  }
+  .fab:active{ transform:scale(0.94); }
+
+  /* Sheets (bottom modals) */
+  .sheet-backdrop{
+    position:fixed; inset:0; background:rgba(59,58,53,0.35); display:none;
+    align-items:flex-end; justify-content:center; z-index:50;
+  }
+  .sheet-backdrop.show{ display:flex; }
+  .sheet{
+    background:var(--bg); width:100%; max-width:480px; border-radius:20px 20px 0 0;
+    padding:20px 20px calc(20px + env(safe-area-inset-bottom));
+    box-shadow:0 -8px 30px rgba(0,0,0,0.15); max-height:88vh; overflow-y:auto;
+  }
+  .sheet h3{ font-family:'Fraunces'; font-style:italic; font-weight:600; font-size:22px; margin:0 0 16px; color:var(--ink); }
+  .field{ margin-bottom:14px; }
+  .field label{
+    display:block; font-size:11px; color:var(--ink-soft); margin-bottom:5px;
+    font-weight:600; text-transform:uppercase; letter-spacing:.03em;
+  }
+  .field input, .field select, .field textarea{
+    width:100%; padding:11px 12px; border-radius:10px; border:1px solid var(--line);
+    background:var(--panel); font-family:'Work Sans'; font-size:15px; color:var(--ink); outline:none;
+  }
+  .field textarea{ resize:vertical; min-height:70px; line-height:1.5; }
+  .field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--sage); }
+
+  .ing-row{ display:flex; gap:7px; margin-bottom:8px; }
+  .ing-row input{ padding:9px 10px; font-size:14px; }
+  .ing-row .ing-name{ flex:2; }
+  .ing-row .ing-amount{ flex:1; }
+  .ing-row .ing-unit{ flex:1; }
+  .ing-row button{
+    flex:none; border:none; background:var(--clay-dim); color:var(--clay);
+    width:34px; border-radius:8px; font-size:15px; cursor:pointer;
+  }
+  .add-ing-btn{
+    width:100%; padding:9px; border-radius:8px; border:1px dashed var(--line);
+    background:none; color:var(--ink-soft); font-size:13px; cursor:pointer; margin-top:2px;
+  }
+
+  .sheet-actions{ display:flex; gap:10px; margin-top:10px; }
+  .btn{ flex:1; padding:12px; border-radius:10px; border:none; font-weight:600; font-size:14.5px; cursor:pointer; }
+  .btn-primary{ background:var(--ink); color:var(--bg); }
+  .btn-secondary{ background:var(--sage-dim); color:var(--sage-deep); }
+  .btn-danger{ background:var(--clay-dim); color:var(--clay); }
+  .btn-row-2{ display:flex; gap:10px; margin-top:8px; }
+
+  /* Detail sheet */
+  .detail-title{ font-family:'Fraunces'; font-style:italic; font-weight:600; font-size:23px; margin:0 0 4px; color:var(--ink); }
+  .detail-link{ font-size:12.5px; color:var(--clay); text-decoration:none; }
+  .servings-row{
+    display:flex; align-items:center; justify-content:space-between;
+    background:var(--sage-dim); border-radius:12px; padding:10px 14px; margin:16px 0;
+  }
+  .servings-row span{ font-size:13.5px; color:var(--sage-deep); font-weight:600; }
+  .servings-ctrl{ display:flex; align-items:center; gap:12px; }
+  .servings-ctrl button{
+    width:28px; height:28px; border-radius:50%; border:none; background:var(--panel);
+    color:var(--sage-deep); font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center;
+  }
+  .servings-ctrl .count{ font-size:15px; font-weight:600; color:var(--ink); min-width:16px; text-align:center; }
+  .detail-section-title{
+    font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-soft);
+    font-weight:600; margin:18px 0 8px;
+  }
+  .ing-list-view{ list-style:none; padding:0; margin:0; }
+  .ing-list-view li{
+    display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--line);
+    font-size:14.5px;
+  }
+  .ing-list-view li .amt{ color:var(--sage-deep); font-weight:600; }
+  .steps-view{ font-size:14.5px; line-height:1.7; color:var(--ink); white-space:pre-wrap; }
+  .empty-detail{ color:var(--ink-soft); font-size:13.5px; font-style:italic; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <h1>Cosa cucino</h1>
+    <p><span class="sync-dot"></span>Pianifica la settimana</p>
+  </div>
+  <div class="search">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input id="searchInput" type="text" placeholder="Cerca una ricetta...">
+  </div>
+  <div class="legend">
+    <span><span class="legend-dot" style="background:var(--sage);"></span>cena</span>
+    <span><span class="legend-dot" style="background:var(--clay);"></span>pranzo lavoro</span>
+  </div>
+</header>
+
+<div class="week-card">
+  <div class="head">
+    <h2>Questa settimana</h2>
+    <button id="resetWeekBtn" class="reset">reset settimana</button>
+  </div>
+  <div id="weekList" class="week-list"></div>
+  <div id="weekEmpty" class="week-empty">Nessuna ricetta ancora selezionata — tocca i cerchi qui sotto.</div>
+</div>
+
+<div class="week-card work-card">
+  <div class="head">
+    <h2>Questa settimana a lavoro</h2>
+    <button id="resetWorkWeekBtn" class="reset">reset settimana</button>
+  </div>
+  <div id="workWeekList" class="week-list"></div>
+  <div id="workWeekEmpty" class="week-empty">Nessuna ricetta ancora selezionata per il lavoro.</div>
+</div>
+
+<div class="week-card suggest-card">
+  <div class="head">
+    <h2>Suggerimenti per te</h2>
+    <button id="suggestBtn" class="reset">rigenera</button>
+  </div>
+  <p id="suggestInfo" class="week-empty" style="display:none;"></p>
+  <div id="suggestStatus" class="week-empty" style="display:none;"></div>
+  <div id="suggestResults"></div>
+</div>
+
+<main id="categoriesRoot"></main>
+
+<button class="fab" id="addFab" aria-label="Aggiungi ricetta">+</button>
+
+<!-- Add/Edit sheet -->
+<div class="sheet-backdrop" id="sheetBackdrop">
+  <div class="sheet">
+    <h3 id="sheetTitle">Nuova ricetta</h3>
+    <div class="field">
+      <label for="f-name">Nome</label>
+      <input id="f-name" type="text" placeholder="Es. Pasta al pesto">
+    </div>
+    <div class="field">
+      <label for="f-cat">Categoria</label>
+      <select id="f-cat"></select>
+    </div>
+    <div class="field">
+      <label for="f-link">Link ricetta (facoltativo)</label>
+      <input id="f-link" type="url" placeholder="https://...">
+    </div>
+    <div class="field">
+      <label for="f-servings">Porzioni base</label>
+      <input id="f-servings" type="number" min="1" value="2">
+    </div>
+    <div class="field">
+      <label>Ingredienti (facoltativo)</label>
+      <div id="ingRows"></div>
+      <button type="button" class="add-ing-btn" id="addIngBtn">+ aggiungi ingrediente</button>
+    </div>
+    <div class="field">
+      <label for="f-steps">Procedimento (facoltativo)</label>
+      <textarea id="f-steps" placeholder="1. ...&#10;2. ...&#10;3. ..."></textarea>
+    </div>
+    <div class="sheet-actions">
+      <button class="btn btn-secondary" id="cancelBtn">Annulla</button>
+      <button class="btn btn-primary" id="saveBtn">Salva</button>
+    </div>
+    <div class="btn-row-2" id="deleteRow" style="display:none;">
+      <button class="btn btn-danger" id="deleteBtn">Elimina ricetta</button>
+    </div>
+  </div>
+</div>
+
+<!-- Detail sheet -->
+<div class="sheet-backdrop" id="detailBackdrop">
+  <div class="sheet">
+    <h3 class="detail-title" id="detailName"></h3>
+    <a class="detail-link" id="detailLink" href="#" target="_blank" rel="noopener" style="display:none;">ingredienti e procedimento completi →</a>
+
+    <div class="servings-row" id="servingsRow" style="display:none;">
+      <span>Porzioni</span>
+      <div class="servings-ctrl">
+        <button id="servMinus">−</button>
+        <span class="count" id="servCount">2</span>
+        <button id="servPlus">+</button>
+      </div>
+    </div>
+
+    <div id="ingSection" style="display:none;">
+      <div class="detail-section-title">Ingredienti</div>
+      <ul class="ing-list-view" id="ingListView"></ul>
+    </div>
+
+    <div id="stepsSection" style="display:none;">
+      <div class="detail-section-title">Procedimento</div>
+      <div class="steps-view" id="stepsView"></div>
+    </div>
+
+    <div id="detailEmpty" class="empty-detail" style="display:none;">Nessun ingrediente o procedimento salvato per questa ricetta.</div>
+
+    <div class="sheet-actions" style="margin-top:20px;">
+      <button class="btn btn-secondary" id="detailCloseBtn">Chiudi</button>
+      <button class="btn btn-primary" id="detailEditBtn">Modifica</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* Genera il manifest al volo (icona per "Aggiungi a schermata Home"), senza bisogno di file esterni */
+(function setupManifest(){
+  const iconDataUri = document.getElementById('faviconLink').href;
+  const manifest = {
+    name: "Cosa cucino",
+    short_name: "Cosa cucino",
+    start_url: ".",
+    display: "standalone",
+    background_color: "#FBFAF7",
+    theme_color: "#FBFAF7",
+    icons: [
+      { src: iconDataUri, sizes: "192x192", type: "image/png" },
+      { src: iconDataUri, sizes: "512x512", type: "image/png" }
+    ]
+  };
+  const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
+  document.getElementById('manifestLink').href = URL.createObjectURL(blob);
+})();
+</script>
+
+<script>
+/* =========================================================
+   SUPABASE SYNC (scaffold — inactive until credentials set)
+   Per attivare la sincronizzazione tra due dispositivi:
+   1. Sostituisci SUPABASE_URL e SUPABASE_ANON_KEY qui sotto
+   2. Crea nel progetto Supabase una tabella "ricette_sync" con:
+        key text primary key,
+        value jsonb,
+        updated_at timestamptz default now()
+   Finché i placeholder restano tali, l'app usa solo localStorage.
+========================================================= */
+const SUPABASE_URL = 'https://ujyrbdayoxflaffdoxmo.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_p9YBvhbVrxxw0f5_rZm5XQ_Q92_GA4t';
+const SYNC_KEY = 'ricette_cosa_cucino';
+const SYNC_ENABLED = SUPABASE_URL.startsWith('http') && SUPABASE_ANON_KEY.length > 20;
+let lastLocalWrite = 0;
+
+async function pushToCloud(){
+  if(!SYNC_ENABLED) return;
+  try{
+    await fetch(`${SUPABASE_URL}/rest/v1/ricette_sync`, {
+      method:'POST',
+      headers:{
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Content-Type':'application/json',
+        'Prefer':'resolution=merge-duplicates'
+      },
+      body: JSON.stringify({ key: SYNC_KEY, value: data, updated_at: new Date().toISOString() })
+    });
+  }catch(e){ console.warn('Sync push fallita', e); }
+}
+
+async function pullFromCloud(){
+  if(!SYNC_ENABLED) return;
+  try{
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/ricette_sync?key=eq.${SYNC_KEY}&select=value,updated_at`, {
+      headers:{ 'apikey': SUPABASE_ANON_KEY, 'Authorization': `Bearer ${SUPABASE_ANON_KEY}` }
+    });
+    const rows = await res.json();
+    if(rows && rows[0] && rows[0].value && Date.now() - lastLocalWrite > 10000){
+      data = rows[0].value;
+      render();
+    }
+  }catch(e){ console.warn('Sync pull fallita', e); }
+}
+
+if(SYNC_ENABLED){
+  setInterval(pullFromCloud, 20000);
+}
+
+/* ========================= DATA ========================= */
+const STORAGE_KEY = 'cosa_cucino_data_v2';
+const CATEGORIES = ['No carne','Carne','Pesce','Pranzi lavoro','Ricette bimbe','Dessert'];
+
+const SEED = [
+  {name:'Bruschetta di pomodoro ed insalata', category:'No carne', link:'', marked:true},
+  {name:'Risotto con zucca e geitenkaas', category:'No carne', link:'https://mijnxtra.be/home/recipe/8ECDED30-A825-11ED-9D9D-AF88D67CFC7', marked:false},
+  {name:'Ciabatta geitenkaas, avocado e mango', category:'No carne', link:'', marked:false},
+  {name:'Pasta con Boursin e pomodorini', category:'No carne', link:'https://uitdekeukenvanfatima.nl/recipe/tiktok-pasta/', marked:false},
+  {name:'Pasta con pesto di pomodorini arrosto, mozzarelline e basilico', category:'No carne', link:'', marked:false, baseServings:4, ingredients:[
+    {name:'pasta', amount:'320', unit:'g'},
+    {name:'pomodorini rossi e gialli', amount:'300', unit:'g'},
+    {name:'formaggio grattugiato', amount:'40', unit:'g'},
+    {name:'mandorle (senza buccia)', amount:'40', unit:'g'},
+    {name:'basilico', amount:'1', unit:'mazzetto'},
+    {name:'olio d\'oliva extravergine', amount:'', unit:''},
+    {name:'sale', amount:'', unit:''},
+    {name:'origano', amount:'', unit:''},
+    {name:'mozzarelline', amount:'200', unit:'g'}
+  ], steps:'1. Tagliare i pomodorini a metà, condire con olio, sale e origano e cuocere in forno o friggitrice ad aria a 180° per circa 10 minuti.\n2. Frullare i pomodorini arrostiti con mandorle, formaggio grattugiato e basilico fino a ottenere una crema non troppo liscia.\n3. Cuocere la pasta in acqua bollente salata, scolare e versare in una ciotola grande.\n4. Aggiungere il pesto, mescolare e unire per ultime le mozzarelline.\n5. Impiattare decorando con qualche pomodorino arrosto tenuto da parte e foglie di basilico.'},
+  {name:'Tex mex Colruyt', category:'No carne', link:'https://mijnxtra.be/home/recipe/0B100650-B005-11F0-A2E7-BD056566EC53', marked:false},
+  {name:'Wrap caldo con falafel e salsa yogurt-senape', category:'No carne', link:'', marked:false, baseServings:2, ingredients:[
+    {name:'tortillas grandi', amount:'4', unit:''},
+    {name:'falafel pronti (o fatti in casa)', amount:'6-8', unit:''},
+    {name:'carota media', amount:'1', unit:''},
+    {name:'lattuga', amount:'50', unit:'g'},
+    {name:'pomodorini', amount:'50', unit:'g'},
+    {name:'yogurt naturale', amount:'2', unit:'cucchiai'},
+    {name:'senape dolce', amount:'1', unit:'cucchiaino'},
+    {name:'sale e pepe', amount:'', unit:'q.b.'}
+  ], steps:'1. Mescolare yogurt, senape dolce, sale e pepe fino a ottenere una crema liscia. Mettere da parte.\n2. Scaldare le tortillas in padella o forno, 2-3 minuti per lato finché leggermente dorate.\n3. Cuocere i falafel: se surgelati seguire le istruzioni, se freschi rosolare 3-4 minuti per lato.\n4. Tagliare la carota a julienne, i pomodorini a metà e lavare la lattuga.\n5. Spalmare la salsa yogurt-senape su ogni tortilla, aggiungere verdure e falafel caldi.\n6. Arrotolare stretto e servire subito.'},
+  {name:'Bruschetta calda con halloumi, zucchine grigliate e miele', category:'No carne', link:'', marked:false, baseServings:2, ingredients:[
+    {name:'pane rustico (tipo sourdough o campagnolo)', amount:'4', unit:'fette'},
+    {name:'halloumi', amount:'200', unit:'g'},
+    {name:'zucchina grande', amount:'1', unit:''},
+    {name:'miele', amount:'1-2', unit:'cucchiaini'},
+    {name:'olio extravergine d\'oliva', amount:'', unit:''},
+    {name:'pepe nero', amount:'', unit:''}
+  ], steps:'1. Tagliare le zucchine a fettine sottili per il lungo e grigliarle 3-4 minuti per lato con un filo d\'olio e un pizzico di sale.\n2. Tagliare l\'halloumi a fette di circa 1 cm e rosolarlo in padella calda 2-3 minuti per lato finché dorato.\n3. Tostare il pane in forno o padella fino a croccantezza.\n4. Assemblare: pane, poi zucchine, poi halloumi caldo.\n5. Completare con un filo di miele e pepe nero macinato fresco.'},
+  {name:'Zuppa di porri', category:'No carne', link:'', marked:false, baseServings:4, ingredients:[
+    {name:'porri (solo parte bianca)', amount:'3', unit:''},
+    {name:'cipolla gialla', amount:'1', unit:''},
+    {name:'aglio', amount:'1', unit:'spicchio'},
+    {name:'patata media (pasta gialla)', amount:'1', unit:''},
+    {name:'curry dolce', amount:'2', unit:'cucchiaini'},
+    {name:'dadi di brodo di pollo (o brodo fatto in casa)', amount:'2', unit:''},
+    {name:'olio extravergine d\'oliva', amount:'', unit:''},
+    {name:'acqua calda', amount:'700', unit:'ml'},
+    {name:'panna da cucina o yogurt greco (facoltativo, per servire)', amount:'', unit:''}
+  ], steps:'1. Affettare finemente cipolla e aglio, pelare e tagliare a cubetti la patata, affettare la parte bianca dei porri a rondelle sottili.\n2. Scaldare l\'olio in una casseruola e rosolare cipolla e aglio finché dorati. Aggiungere la patata e rosolare 3-4 minuti, poi unire i porri e cuocere finché traslucidi (circa 5 minuti).\n3. Versare l\'acqua calda quanto basta per coprire gli ingredienti, aggiungere curry, sale, pepe e i dadi di brodo.\n4. Coprire e cuocere a fuoco basso 15-20 minuti, mescolando di tanto in tanto.\n5. Per una consistenza vellutata frullare con un mixer a immersione, oppure lasciare a pezzi per una zuppa più rustica.\n6. Servire con un cucchiaio di panna o yogurt e accompagnare con crostini o pane tostato.'},
+  {name:'Pasta ciliegino, salsa e burrata', category:'No carne', link:'', marked:true},
+
+  {name:'Anellini al forno', category:'Carne', link:'', marked:false},
+  {name:'Geitenkaas salade', category:'Carne', link:'', marked:false},
+  {name:'Patatine', category:'Carne', link:'', marked:false},
+  {name:'Spaghetti (Barilla) con ragù e carote', category:'Carne', link:'', marked:false},
+  {name:'Pasta con panna e macinato', category:'Carne', link:'', marked:false},
+  {name:'Smos', category:'Carne', link:'', marked:false},
+  {name:'Pasta con salsiccia, crema di zucca e besciamella', category:'Carne', link:'', marked:false, baseServings:2, ingredients:[
+    {name:'pasta (rigatoni, fusilli o mezze maniche)', amount:'160', unit:'g'},
+    {name:'zucca (delica o mantovana)', amount:'250', unit:'g'},
+    {name:'salsiccia', amount:'125', unit:'g'},
+    {name:'besciamella fluida', amount:'150', unit:'ml'},
+    {name:'formaggio grattugiato (parmigiano, grana o pecorino)', amount:'25', unit:'g'},
+    {name:'olio extravergine d\'oliva', amount:'', unit:''},
+    {name:'sale e pepe', amount:'', unit:'q.b.'}
+  ], steps:'1. Tagliare la zucca a cubetti e cuocerla in padella con un filo d\'olio, un po\' d\'acqua, sale e pepe, coperta, per circa 20 minuti finché morbida. Frullare con la besciamella e il formaggio fino a ottenere una crema liscia; tenere calda a fuoco basso.\n2. Tagliare la salsiccia a rocchetti e cuocerla in padella antiaderente senza olio finché ben dorata e croccante.\n3. Cuocere la pasta al dente, conservando un po\' di acqua di cottura.\n4. Condire la pasta con la crema di zucca calda, allungando con acqua di cottura se serve.\n5. Impiattare, aggiungere la salsiccia croccante e, a piacere, rosmarino, nocciole e formaggio extra.'},
+  {name:'Ciabatta con mozzarella o burrata, prosciutto crudo, rucola e balsamico', category:'Carne', link:'', marked:true},
+  {name:'Bagel con geitenkaas, rucola, prosciutto crudo e miele', category:'Carne', link:'', marked:false},
+  {name:'Bagel avocado, salmone, geitenkaas o philadelphia', category:'Carne', link:'', marked:false},
+  {name:'Gnocchi spinaci sugo', category:'Carne', link:'https://www.colruyt.be/nl/recepten/boerenworst-met-gnocchi-bhen-inspinazie-tomatensaus', marked:false},
+  {name:'Praagse schnitzel', category:'Carne', link:'https://www.colruyt.be/nl/recepten/pittig-aardappelslaatje-met-praagse-schnitzel', marked:false},
+  {name:'Spaanse balletjes in tomatensaus', category:'Carne', link:'https://www.colruyt.be/nl/recepten/spaanse-balletjes-in-tomatensaus-albondigas', marked:false},
+  {name:'Risotto salsiccia (o macinato) zafferano', category:'Carne', link:'', marked:false},
+  {name:'Chipolata + insalata o rucola + purè', category:'Carne', link:'', marked:false},
+  {name:'Pollo al forno con patate', category:'Carne', link:'', marked:false},
+  {name:'Vol au vent con purée e apple mouse', category:'Carne', link:'', marked:false},
+  {name:'Riso + agrodolce + pollo', category:'Carne', link:'', marked:false},
+  {name:'Pizza Hawaii', category:'Carne', link:'', marked:true},
+  {name:'Sushi', category:'Carne', link:'', marked:false},
+  {name:'Burger 🥳', category:'Carne', link:'', marked:true},
+  {name:'Macinato, cipolla e patate', category:'Carne', link:'https://www.libelle-lekker.be/bekijk-recept/3580/video-hete-bliksem-ovenschotel-1', marked:false},
+  {name:'Honingkip met knapperige groenten en noodles', category:'Carne', link:'https://www.libelle-lekker.be/bekijk-recept/89584/honingkip-met-knapperige-groenten-uit-de-airfryer', marked:false},
+
+  {name:'Pasta al forno tonno, olive e mozzarella', category:'Pesce', link:'https://sylviafoodlover.be/ovenschotel-van-fusilli-met-tonijn-olijven-en-mozzarella/', marked:false},
+  {name:'Wraps con tonno, mango e avocado', category:'Pesce', link:'https://www.hellofresh.be/recipes/frisse-wraps-met-tonijn-mango-en-avocado-6458dcd5b0a4d655ddff9b4a', marked:true},
+  {name:'Risotto zoete aardappel, scampi e rucola', category:'Pesce', link:'https://mijnxtra.be/home/recipe/AE33D4E0-A817-11ED-9080-A36EDE9C59D7', marked:false, baseServings:2, ingredients:[
+    {name:'scampi grandi crudi con guscio (surgelati)', amount:'5', unit:''},
+    {name:'rucola', amount:'25', unit:'g'},
+    {name:'patate dolci', amount:'150', unit:'g'},
+    {name:'cipolla', amount:'0.5', unit:''},
+    {name:'Grana Padano grattugiato', amount:'25', unit:'g'},
+    {name:'riso per risotto', amount:'150', unit:'g'},
+    {name:'vino bianco secco', amount:'50', unit:'ml'},
+    {name:'olio d\'oliva', amount:'1.5', unit:'cucchiai'},
+    {name:'dado di brodo di pollo', amount:'0.5', unit:''},
+    {name:'pepe nero', amount:'', unit:'q.b.'}
+  ], steps:'1. Scongelare leggermente gli scampi, asciugarli, sgusciarli e tagliarli a metà per il lungo.\n2. Sbucciare le patate dolci e tagliarle a cubetti di circa 1 cm. Tritare grossolanamente la rucola. Grattugiare il Grana Padano e affettare finemente la cipolla.\n3. Scaldare l\'olio in una pentola, soffriggere la cipolla 1 minuto, aggiungere il riso e mescolare finché i chicchi diventano traslucidi.\n4. Sfumare con il vino bianco e lasciare evaporare. Versare 500 ml di acqua con il dado sbriciolato, coprire e cuocere a fuoco basso circa 20 minuti. Aggiustare di sale e pepe.\n5. Nel frattempo scaldare 2 cucchiai di olio e cuocere le patate dolci 5 minuti, condendo con sale e pepe.\n6. A 5 minuti dalla fine cottura del risotto, aggiungere patate dolci e scampi e lasciare cuocere insieme.\n7. Poco prima di servire incorporare la rucola, spolverare con il Grana Padano e servire subito.'},
+  {name:'Filetto di salmone con riso, avocado e soia', category:'Pesce', link:'', marked:false, baseServings:2, ingredients:[
+    {name:'riso (basmati o jasmine)', amount:'160', unit:'g'},
+    {name:'filetti di salmone surgelato', amount:'2', unit:''},
+    {name:'avocado maturo', amount:'1', unit:''},
+    {name:'salsa di soia', amount:'2', unit:'cucchiai'},
+    {name:'miele (o sciroppo d\'acero)', amount:'1', unit:'cucchiaio'},
+    {name:'olio (sesamo o oliva)', amount:'1', unit:'cucchiaio'},
+    {name:'succo di mezzo limone (o lime)', amount:'', unit:''},
+    {name:'semi di sesamo (facoltativi)', amount:'', unit:''},
+    {name:'sale e pepe', amount:'', unit:'q.b.'}
+  ], steps:'1. Cuocere il riso.\n2. Scongelare il salmone se surgelato, tamponarlo con carta da cucina e tagliarlo a cubetti o lasciarlo intero.\n3. Scaldare un filo d\'olio e cuocere il salmone 3-4 minuti per lato. Aggiungere salsa di soia e miele e far glassare finché lucido e caramellato.\n4. Tagliare l\'avocado a fette o cubetti e condirlo con limone, sale e pepe.\n5. Assemblare la bowl: riso alla base, salmone caldo, avocado, semi di sesamo e un filo di salsa di soia.'},
+
+  {name:'Pasta al sugo', category:'Pranzi lavoro', link:'', marked:true},
+  {name:'Riso con macinato e sugo', category:'Pranzi lavoro', link:'', marked:false},
+  {name:'Hamburger con rucola e pomodorini', category:'Pranzi lavoro', link:'', marked:true},
+  {name:'Schnitzel con verdure', category:'Pranzi lavoro', link:'', marked:false},
+  {name:'Anellini', category:'Pranzi lavoro', link:'', marked:false},
+  {name:'Insalata', category:'Pranzi lavoro', link:'', marked:false},
+  {name:'Risotto allo zafferano', category:'Pranzi lavoro', link:'', marked:false, baseServings:2, ingredients:[
+    {name:'scampi crudi non sgusciati (congelati)', amount:'8', unit:''},
+    {name:'rondelle di zucchine (congelate)', amount:'200', unit:'g'},
+    {name:'prezzemolo piatto', amount:'', unit:'mazzetto piccolo'},
+    {name:'scalogno', amount:'0.5', unit:''},
+    {name:'aglio', amount:'0.5', unit:'spicchio'},
+    {name:'Grana Padano', amount:'25', unit:'g'},
+    {name:'burro', amount:'1.5', unit:'cucchiai'},
+    {name:'riso per risotto', amount:'120', unit:'g'},
+    {name:'vino bianco secco', amount:'50', unit:'ml'},
+    {name:'acqua', amount:'360', unit:'ml'},
+    {name:'dado di brodo di pollo', amount:'0.75', unit:''},
+    {name:'olio d\'oliva', amount:'50', unit:'ml'},
+    {name:'zafferano in fili', amount:'5', unit:'tubetti'},
+    {name:'sale e pepe nero', amount:'', unit:'q.b.'}
+  ], steps:'1. Sciogliere il dado di brodo in acqua calda. Scongelare gli scampi in frigo, poi asciugarli tamponando.\n2. Tritare finemente aglio e scalogno, tritare il prezzemolo, grattugiare il Grana Padano.\n3. Scaldare l\'olio e soffriggere aglio e scalogno per qualche minuto.\n4. Aggiungere il riso e mescolare a fuoco alto finché i chicchi diventano traslucidi. Versare il vino bianco e lasciare evaporare completamente.\n5. Aggiungere un mestolo di brodo alla volta, coprendo e lasciando sobbollire a fuoco basso finché assorbito, senza mescolare troppo.\n6. A metà cottura aggiungere le zucchine, continuando ad aggiungere brodo finché il riso è cotto (circa 18-20 minuti in totale).\n7. Nel frattempo sciogliere il burro in una padella e cuocere gli scampi 2 minuti per lato, condendo con sale e pepe.\n8. Togliere il risotto dal fuoco e aggiungere Grana Padano, burro, zafferano, metà del prezzemolo e gli scampi.\n9. Impiattare guarnendo con il resto del prezzemolo e una spolverata di pepe nero.'},
+  {name:'Dinner leftovers', category:'Pranzi lavoro', link:'', marked:false},
+  {name:'Bagel mozzarella, pomodoro e rucola', category:'Pranzi lavoro', link:'', marked:true},
+  {name:'Bagel con burger', category:'Pranzi lavoro', link:'', marked:false},
+  {name:'Bagel con tonno, geitenkaas o philadelphia e cetrioli', category:'Pranzi lavoro', link:'', marked:true},
+
+  {name:'Pollo, patatine o pita', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Wraps prosciutto e formaggio', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Croques', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Pasta in bianco', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Pasta al sugo', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Maccheroni', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Lasagne', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Nuggets', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Salsicce o curryworst con purè', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Uova', category:'Ricette bimbe', link:'', marked:false},
+  {name:'Fishsticks', category:'Ricette bimbe', link:'', marked:false},
+
+  {name:'Mela cotta', category:'Dessert', link:'https://recepten.lidl.nl/recept/sonja-s-toetje-met-ijs-en-gebakken-appel', marked:false},
+  {name:'Mela con cannella e gelato', category:'Dessert', link:'https://www.libelle-lekker.be/bekijk-recept/86390/appelpartjes-met-kaneel-uit-de-airfryer-1', marked:false},
+];
+
+function buildFromSeed(){
+  return SEED.map((r,i)=>({
+    id:'r'+i+'_'+Date.now()+'_'+Math.random().toString(36).slice(2,6),
+    name:r.name, category:r.category, link:r.link||'', marked:r.marked?1:0, markedWork:0,
+    baseServings:r.baseServings||2, ingredients:r.ingredients||[], steps:r.steps||''
+  }));
+}
+
+function normalizeCounts(recipes){
+  // Converte eventuali vecchi valori booleani (true/false) in numeri (1/0),
+  // così i dati salvati prima dell'introduzione del contatore continuano a funzionare
+  let changed = false;
+  recipes.forEach(r=>{
+    if(typeof r.marked === 'boolean'){ r.marked = r.marked ? 1 : 0; changed = true; }
+    if(typeof r.markedWork === 'boolean'){ r.markedWork = r.markedWork ? 1 : 0; changed = true; }
+    if(typeof r.marked !== 'number'){ r.marked = 0; changed = true; }
+    if(typeof r.markedWork !== 'number'){ r.markedWork = 0; changed = true; }
+  });
+  return changed;
+}
+
+function mergeSeedIntoExisting(existingRecipes){
+  let changed = normalizeCounts(existingRecipes);
+  const existingKey = (name, cat)=> (name.trim().toLowerCase()+'|'+cat);
+  const existingMap = {};
+  existingRecipes.forEach(r=> existingMap[existingKey(r.name, r.category)] = r);
+
+  SEED.forEach(s=>{
+    const key = existingKey(s.name, s.category);
+    const found = existingMap[key];
+    if(found){
+      // Fill in missing ingredients/steps without overwriting anything the user already entered
+      if((!found.ingredients || found.ingredients.length===0) && s.ingredients && s.ingredients.length){
+        found.ingredients = s.ingredients;
+        changed = true;
+      }
+      if((!found.steps || found.steps.trim()==='') && s.steps){
+        found.steps = s.steps;
+        changed = true;
+      }
+      if(s.baseServings && (!found.baseServings || found.baseServings===2) && found.baseServings !== s.baseServings){
+        found.baseServings = s.baseServings;
+        changed = true;
+      }
+    }else{
+      // Recipe from seed not present yet (e.g. newly added) — add it
+      existingRecipes.push({
+        id:uid(), name:s.name, category:s.category, link:s.link||'', marked:s.marked?1:0, markedWork:0,
+        baseServings:s.baseServings||2, ingredients:s.ingredients||[], steps:s.steps||''
+      });
+      changed = true;
+    }
+  });
+  return changed;
+}
+
+function loadData(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(raw){
+      const parsed = JSON.parse(raw);
+      if(parsed && Array.isArray(parsed.recipes)){
+        const didChange = mergeSeedIntoExisting(parsed.recipes);
+        if(didChange){
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(parsed));
+        }
+        return parsed;
+      }
+    }
+  }catch(e){}
+  return { recipes: buildFromSeed() };
+}
+
+let data = loadData();
+let editingId = null;
+let detailId = null;
+let detailServings = 2;
+
+function save(){
+  lastLocalWrite = Date.now();
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  pushToCloud();
+}
+
+function uid(){ return 'r_'+Math.random().toString(36).slice(2,10)+Date.now(); }
+
+const root = document.getElementById('categoriesRoot');
+const weekList = document.getElementById('weekList');
+const weekEmpty = document.getElementById('weekEmpty');
+const workWeekList = document.getElementById('workWeekList');
+const workWeekEmpty = document.getElementById('workWeekEmpty');
+const searchInput = document.getElementById('searchInput');
+const categoryOpenState = {};
+CATEGORIES.forEach(cat=> categoryOpenState[cat] = true);
+
+function escapeHtml(s){
+  const div = document.createElement('div');
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+function createCounterControl(recipe, field, isWork){
+  if(!recipe[field]){
+    const btn = document.createElement('button');
+    btn.className = 'marker-plain';
+    btn.title = isWork ? 'Pranzo lavoro' : 'Cena';
+    btn.onclick = ()=>{ recipe[field] = 1; save(); render(); };
+    return btn;
+  }
+  const stepper = document.createElement('div');
+  stepper.className = 'stepper' + (isWork ? ' stepper-work' : '');
+
+  const minus = document.createElement('button');
+  minus.textContent = '−';
+  minus.onclick = ()=>{ recipe[field] = Math.max(0, recipe[field]-1); save(); render(); };
+
+  const count = document.createElement('span');
+  count.className = 'count';
+  count.textContent = recipe[field];
+
+  const plus = document.createElement('button');
+  plus.textContent = '+';
+  plus.onclick = ()=>{ recipe[field]++; save(); render(); };
+
+  stepper.appendChild(minus);
+  stepper.appendChild(count);
+  stepper.appendChild(plus);
+  return stepper;
+}
+
+function render(){
+  const q = searchInput.value.trim().toLowerCase();
+
+  const marked = data.recipes.filter(r=>r.marked > 0);
+  weekList.innerHTML = '';
+  weekEmpty.style.display = marked.length ? 'none' : 'block';
+  marked.forEach(r=>{
+    const chip = document.createElement('div');
+    chip.className = 'week-chip';
+    chip.innerHTML = `<span>${escapeHtml(r.name)}</span><span class="count-badge">${r.marked}</span>`;
+    const btn = document.createElement('button');
+    btn.textContent = '×';
+    btn.onclick = ()=>{ r.marked = 0; save(); render(); };
+    chip.appendChild(btn);
+    weekList.appendChild(chip);
+  });
+
+  const markedWork = data.recipes.filter(r=>r.markedWork > 0);
+  workWeekList.innerHTML = '';
+  workWeekEmpty.style.display = markedWork.length ? 'none' : 'block';
+  markedWork.forEach(r=>{
+    const chip = document.createElement('div');
+    chip.className = 'week-chip';
+    chip.innerHTML = `<span>${escapeHtml(r.name)}</span><span class="count-badge">${r.markedWork}</span>`;
+    const btn = document.createElement('button');
+    btn.textContent = '×';
+    btn.onclick = ()=>{ r.markedWork = 0; save(); render(); };
+    chip.appendChild(btn);
+    workWeekList.appendChild(chip);
+  });
+
+  root.innerHTML = '';
+  let anyVisible = false;
+  CATEGORIES.forEach(cat=>{
+    let recipesInCat = data.recipes.filter(r=>r.category===cat);
+    if(q) recipesInCat = recipesInCat.filter(r=>r.name.toLowerCase().includes(q));
+    if(q && recipesInCat.length===0) return;
+    anyVisible = true;
+
+    const details = document.createElement('details');
+    details.className = 'category';
+    details.open = q ? true : categoryOpenState[cat];
+    details.addEventListener('toggle', ()=>{ if(!q) categoryOpenState[cat] = details.open; });
+
+    const summary = document.createElement('summary');
+    summary.innerHTML = `
+      <span class="cat-title">${escapeHtml(cat)}</span>
+      <span class="cat-count">${recipesInCat.length}</span>
+      <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    `;
+    details.appendChild(summary);
+
+    const list = document.createElement('div');
+    list.className = 'recipe-list';
+    recipesInCat.sort((a,b)=> a.name.localeCompare(b.name, 'it'));
+
+    recipesInCat.forEach(r=>{
+      const row = document.createElement('div');
+      row.className = 'recipe';
+
+      const nameWrap = document.createElement('div');
+      nameWrap.className = 'name-wrap';
+      const nameEl = document.createElement('div');
+      nameEl.className = 'name';
+      nameEl.textContent = r.name;
+      nameWrap.appendChild(nameEl);
+      if(r.link || (r.ingredients && r.ingredients.length) || r.steps){
+        const hint = document.createElement('div');
+        hint.className = 'rlink';
+        hint.textContent = 'vedi dettagli →';
+        nameWrap.appendChild(hint);
+      }
+      nameWrap.onclick = ()=> openDetail(r.id);
+      row.appendChild(nameWrap);
+
+      const editBtn = document.createElement('button');
+      editBtn.className = 'edit-btn';
+      editBtn.innerHTML = `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>`;
+      editBtn.onclick = ()=> openSheet(r.id);
+      row.appendChild(editBtn);
+
+      const markerGroup = document.createElement('div');
+      markerGroup.className = 'marker-group';
+      markerGroup.appendChild(createCounterControl(r, 'marked', false));
+      markerGroup.appendChild(createCounterControl(r, 'markedWork', true));
+      row.appendChild(markerGroup);
+
+      list.appendChild(row);
+    });
+
+    details.appendChild(list);
+    root.appendChild(details);
+  });
+
+  if(!anyVisible){
+    const empty = document.createElement('div');
+    empty.className = 'empty-state';
+    empty.textContent = 'Nessuna ricetta trovata.';
+    root.appendChild(empty);
+  }
+}
+
+/* ===================== ADD / EDIT SHEET ===================== */
+const sheetBackdrop = document.getElementById('sheetBackdrop');
+const sheetTitle = document.getElementById('sheetTitle');
+const fName = document.getElementById('f-name');
+const fCat = document.getElementById('f-cat');
+const fLink = document.getElementById('f-link');
+const fServings = document.getElementById('f-servings');
+const fSteps = document.getElementById('f-steps');
+const ingRows = document.getElementById('ingRows');
+const deleteRow = document.getElementById('deleteRow');
+
+CATEGORIES.forEach(cat=>{
+  const opt = document.createElement('option');
+  opt.value = cat; opt.textContent = cat;
+  fCat.appendChild(opt);
+});
+
+function addIngRow(name='', amount='', unit=''){
+  const row = document.createElement('div');
+  row.className = 'ing-row';
+  row.innerHTML = `
+    <input class="ing-name" type="text" placeholder="Ingrediente" value="${escapeHtml(name)}">
+    <input class="ing-amount" type="text" placeholder="Qtà" value="${escapeHtml(String(amount))}">
+    <input class="ing-unit" type="text" placeholder="unità" value="${escapeHtml(unit)}">
+    <button type="button">×</button>
+  `;
+  row.querySelector('button').onclick = ()=> row.remove();
+  ingRows.appendChild(row);
+}
+
+document.getElementById('addIngBtn').onclick = ()=> addIngRow();
+
+function openSheet(id){
+  editingId = id || null;
+  ingRows.innerHTML = '';
+  if(editingId){
+    const r = data.recipes.find(x=>x.id===editingId);
+    sheetTitle.textContent = 'Modifica ricetta';
+    fName.value = r.name;
+    fCat.value = r.category;
+    fLink.value = r.link || '';
+    fServings.value = r.baseServings || 2;
+    fSteps.value = r.steps || '';
+    (r.ingredients||[]).forEach(i=> addIngRow(i.name, i.amount, i.unit));
+    deleteRow.style.display = 'flex';
+  }else{
+    sheetTitle.textContent = 'Nuova ricetta';
+    fName.value = '';
+    fCat.value = CATEGORIES[0];
+    fLink.value = '';
+    fServings.value = 2;
+    fSteps.value = '';
+    deleteRow.style.display = 'none';
+  }
+  sheetBackdrop.classList.add('show');
+  setTimeout(()=>fName.focus(), 50);
+}
+
+function closeSheet(){
+  sheetBackdrop.classList.remove('show');
+  editingId = null;
+}
+
+document.getElementById('addFab').onclick = ()=> openSheet(null);
+document.getElementById('cancelBtn').onclick = closeSheet;
+sheetBackdrop.addEventListener('click', (e)=>{ if(e.target===sheetBackdrop) closeSheet(); });
+
+document.getElementById('saveBtn').onclick = ()=>{
+  const name = fName.value.trim();
+  if(!name){ fName.focus(); return; }
+  const category = fCat.value;
+  const link = fLink.value.trim();
+  const baseServings = parseInt(fServings.value) || 2;
+  const steps = fSteps.value.trim();
+  const ingredients = [];
+  ingRows.querySelectorAll('.ing-row').forEach(row=>{
+    const n = row.querySelector('.ing-name').value.trim();
+    const a = row.querySelector('.ing-amount').value.trim();
+    const u = row.querySelector('.ing-unit').value.trim();
+    if(n) ingredients.push({name:n, amount:a, unit:u});
+  });
+
+  if(editingId){
+    const r = data.recipes.find(x=>x.id===editingId);
+    r.name=name; r.category=category; r.link=link; r.baseServings=baseServings;
+    r.steps=steps; r.ingredients=ingredients;
+  }else{
+    data.recipes.push({id:uid(), name, category, link, marked:0, markedWork:0, baseServings, steps, ingredients});
+  }
+  save();
+  closeSheet();
+  render();
+};
+
+document.getElementById('deleteBtn').onclick = ()=>{
+  if(!editingId) return;
+  data.recipes = data.recipes.filter(x=>x.id!==editingId);
+  save();
+  closeSheet();
+  render();
+};
+
+document.getElementById('resetWeekBtn').onclick = ()=>{
+  data.recipes.forEach(r=> r.marked = 0);
+  save();
+  render();
+};
+
+document.getElementById('resetWorkWeekBtn').onclick = ()=>{
+  data.recipes.forEach(r=> r.markedWork = 0);
+  save();
+  render();
+};
+
+searchInput.addEventListener('input', render);
+
+/* ===================== DETAIL SHEET ===================== */
+const detailBackdrop = document.getElementById('detailBackdrop');
+const detailName = document.getElementById('detailName');
+const detailLink = document.getElementById('detailLink');
+const servingsRow = document.getElementById('servingsRow');
+const servCount = document.getElementById('servCount');
+const ingSection = document.getElementById('ingSection');
+const ingListView = document.getElementById('ingListView');
+const stepsSection = document.getElementById('stepsSection');
+const stepsView = document.getElementById('stepsView');
+const detailEmpty = document.getElementById('detailEmpty');
+
+function formatAmount(amount, factor){
+  const n = parseFloat(String(amount).replace(',','.'));
+  if(isNaN(n)) return amount;
+  const scaled = n * factor;
+  const rounded = Math.round(scaled * 100) / 100;
+  return rounded.toString().replace('.', ',');
+}
+
+function renderDetail(){
+  const r = data.recipes.find(x=>x.id===detailId);
+  if(!r) return;
+  detailName.textContent = r.name;
+
+  if(r.link){
+    detailLink.style.display = 'inline-block';
+    detailLink.href = r.link;
+  }else{
+    detailLink.style.display = 'none';
+  }
+
+  const hasIng = r.ingredients && r.ingredients.length;
+  const base = r.baseServings || 2;
+
+  if(hasIng){
+    servingsRow.style.display = 'flex';
+    servCount.textContent = detailServings;
+    ingSection.style.display = 'block';
+    const factor = detailServings / base;
+    ingListView.innerHTML = '';
+    r.ingredients.forEach(i=>{
+      const li = document.createElement('li');
+      const amt = i.amount ? formatAmount(i.amount, factor) + (i.unit ? ' '+i.unit : '') : '';
+      li.innerHTML = `<span>${escapeHtml(i.name)}</span><span class="amt">${escapeHtml(amt)}</span>`;
+      ingListView.appendChild(li);
+    });
+  }else{
+    servingsRow.style.display = 'none';
+    ingSection.style.display = 'none';
+  }
+
+  if(r.steps){
+    stepsSection.style.display = 'block';
+    stepsView.textContent = r.steps;
+  }else{
+    stepsSection.style.display = 'none';
+  }
+
+  detailEmpty.style.display = (!hasIng && !r.steps) ? 'block' : 'none';
+}
+
+function openDetail(id){
+  detailId = id;
+  const r = data.recipes.find(x=>x.id===id);
+  detailServings = (r && r.baseServings) || 2;
+  renderDetail();
+  detailBackdrop.classList.add('show');
+}
+
+document.getElementById('detailCloseBtn').onclick = ()=> detailBackdrop.classList.remove('show');
+detailBackdrop.addEventListener('click', (e)=>{ if(e.target===detailBackdrop) detailBackdrop.classList.remove('show'); });
+document.getElementById('detailEditBtn').onclick = ()=>{
+  detailBackdrop.classList.remove('show');
+  openSheet(detailId);
+};
+document.getElementById('servMinus').onclick = ()=>{
+  if(detailServings > 1){ detailServings--; renderDetail(); }
+};
+document.getElementById('servPlus').onclick = ()=>{
+  detailServings++; renderDetail();
+};
+
+render();
+if(SYNC_ENABLED) pullFromCloud();
+
+/* ===================== SUGGERIMENTI AI ===================== */
+const suggestBtn = document.getElementById('suggestBtn');
+const suggestInfo = document.getElementById('suggestInfo');
+const suggestStatus = document.getElementById('suggestStatus');
+const suggestResults = document.getElementById('suggestResults');
+
+const LAST_FETCH_KEY = 'ricette_suggerimenti_last_fetch';
+const CACHED_RESULTS_KEY = 'ricette_suggerimenti_cache';
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+
+function buildContextSummary(){
+  const byCat = {};
+  CATEGORIES.forEach(c=> byCat[c] = []);
+  data.recipes.forEach(r=>{ if(byCat[r.category]) byCat[r.category].push(r.name); });
+  let out = 'Ricette attuali per categoria:\n';
+  CATEGORIES.forEach(c=>{
+    if(byCat[c].length) out += `- ${c}: ${byCat[c].join(', ')}\n`;
+  });
+  out += '\nStile generale: cucina belga-italiana, molti bagel/wrap/ciabatte per pranzo, pasta frequente, formaggi freschi ricorrenti (geitenkaas, burrata, mozzarella), qualche piatto scandinavo/olandese. Cucina per 2 persone, spesso con poco tempo nei giorni di lavoro.';
+  return out;
+}
+
+function formatLastFetch(ts){
+  const d = new Date(ts);
+  return d.toLocaleDateString('it-IT', { day:'numeric', month:'long' }) + ' alle ' + d.toLocaleTimeString('it-IT', { hour:'2-digit', minute:'2-digit' });
+}
+
+function updateSuggestInfo(){
+  const last = localStorage.getItem(LAST_FETCH_KEY);
+  if(last){
+    suggestInfo.style.display = 'block';
+    const nextDue = parseInt(last) + WEEK_MS;
+    const daysLeft = Math.max(0, Math.ceil((nextDue - Date.now()) / (24*60*60*1000)));
+    suggestInfo.textContent = `Ultimo aggiornamento: ${formatLastFetch(parseInt(last))} · prossimo automatico in ${daysLeft} giorni`;
+  }else{
+    suggestInfo.style.display = 'none';
+  }
+}
+
+async function getSuggestions(showLoading){
+  if(showLoading){
+    suggestStatus.style.display = 'block';
+    suggestStatus.textContent = 'Sto pensando a qualche idea...';
+  }
+  suggestBtn.disabled = true;
+
+  const systemPrompt = `Sei un assistente che suggerisce ricette per una famiglia in Belgio (stile cucina belga-italiana).
+Criteri OBBLIGATORI per ogni ricetta suggerita:
+- Facile da preparare (pochi passaggi, tecniche semplici)
+- Rapida: massimo 25-30 minuti totali di preparazione e cottura
+- Ingredienti facili da trovare in un supermercato standard (es. Colruyt)
+- Porzioni base per 2 persone
+- Coerente con lo stile descritto nel contesto, ma DIVERSA dalle ricette già presenti (non riproporre le stesse)
+
+Rispondi SOLO con un array JSON valido, nessun testo prima o dopo, nessun blocco di codice markdown. Formato esatto:
+[
+  {
+    "name": "Nome ricetta",
+    "category": "No carne" | "Carne" | "Pesce" | "Pranzi lavoro" | "Dessert",
+    "baseServings": 2,
+    "ingredients": [ { "name": "...", "amount": "...", "unit": "..." } ],
+    "steps": "1. ...\\n2. ...\\n3. ..."
+  }
+]
+Esattamente 3 ricette.`;
+
+  try{
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 1500,
+        system: systemPrompt,
+        messages: [
+          { role: "user", content: `Contesto sulle ricette e lo stile dell'utente:\n\n${buildContextSummary()}\n\nDammi 3 nuove ricette secondo i criteri indicati.` }
+        ]
+      })
+    });
+    const resData = await response.json();
+    const textBlock = (resData.content || []).find(b => b.type === 'text');
+    if(!textBlock) throw new Error('Risposta senza testo');
+
+    let cleaned = textBlock.text.trim().replace(/^```json\s*/i, '').replace(/^```\s*/,'').replace(/```\s*$/,'');
+    const suggestions = JSON.parse(cleaned);
+
+    localStorage.setItem(LAST_FETCH_KEY, String(Date.now()));
+    localStorage.setItem(CACHED_RESULTS_KEY, JSON.stringify(suggestions));
+    updateSuggestInfo();
+
+    suggestStatus.style.display = 'none';
+    renderSuggestions(suggestions);
+  }catch(err){
+    console.error(err);
+    suggestStatus.style.display = 'block';
+    suggestStatus.textContent = 'Non sono riuscito a generare i suggerimenti. Riprova con "rigenera".';
+  }finally{
+    suggestBtn.disabled = false;
+  }
+}
+
+function renderSuggestions(list){
+  suggestResults.innerHTML = '';
+  list.forEach(sr=>{
+    const card = document.createElement('div');
+    card.className = 'suggest-item';
+    const ingText = (sr.ingredients||[]).map(i=> i.name + (i.amount ? ' ('+i.amount+(i.unit?' '+i.unit:'')+')' : '')).join(', ');
+    card.innerHTML = `
+      <h4>${escapeHtml(sr.name)}</h4>
+      <span class="s-cat">${escapeHtml(sr.category||'')}</span>
+      <div class="s-ing">${escapeHtml(ingText)}</div>
+      <div class="s-steps">${escapeHtml(sr.steps||'')}</div>
+      <div class="s-actions">
+        <button class="s-add">Aggiungi alla lista</button>
+        <button class="s-skip">Non mi interessa</button>
+      </div>
+    `;
+    card.querySelector('.s-add').onclick = ()=>{
+      const category = CATEGORIES.includes(sr.category) ? sr.category : CATEGORIES[0];
+      data.recipes.push({
+        id:uid(), name:sr.name, category, link:'', marked:0, markedWork:0,
+        baseServings:sr.baseServings||2, ingredients:sr.ingredients||[], steps:sr.steps||''
+      });
+      save();
+      render();
+      card.querySelector('.s-actions').innerHTML = '<span class="s-added">✓ Aggiunta alla lista</span>';
+    };
+    card.querySelector('.s-skip').onclick = ()=> card.remove();
+    suggestResults.appendChild(card);
+  });
+}
+
+suggestBtn.onclick = ()=> getSuggestions(true);
+
+(function initSuggestions(){
+  updateSuggestInfo();
+  const cached = localStorage.getItem(CACHED_RESULTS_KEY);
+  if(cached){
+    try{ renderSuggestions(JSON.parse(cached)); }catch(e){}
+  }
+  const last = localStorage.getItem(LAST_FETCH_KEY);
+  const isDue = !last || (Date.now() - parseInt(last) > WEEK_MS);
+  if(isDue) getSuggestions(true);
+})();
+</script>
+</body>
+</html>
