@@ -22,6 +22,7 @@
     --sage-deep:#5C726E;
     --clay:#C98D6E;
     --clay-dim:#F5E7DF;
+    --star:#D4A24C;
     --shadow: 0 1px 2px rgba(59,58,53,0.05), 0 6px 20px rgba(59,58,53,0.06);
   }
   *{box-sizing:border-box;}
@@ -134,7 +135,12 @@
   .recipe{ display:flex; align-items:center; gap:9px; padding:12px 0; border-bottom:1px solid var(--line); }
   .recipe:last-child{ border-bottom:none; }
   .name-wrap{ flex:1; min-width:0; cursor:pointer; }
-  .name{ font-size:14.5px; font-weight:400; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .name{ font-size:14.5px; font-weight:400; color:var(--ink); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
+  .title-row{ display:flex; align-items:center; gap:2px; min-width:0; }
+  .star-btn{ flex:none; border:none; background:none; padding:4px; margin:-4px 0; cursor:pointer; display:flex; align-items:center; line-height:0; color:#CFC8B6; }
+  .star-btn svg{ width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linejoin:round; }
+  .star-btn.on{ color:var(--star); }
+  .star-btn.on svg{ fill:currentColor; }
   .rlink{ font-size:11.5px; color:var(--clay); margin-top:2px; }
   .edit-btn{ flex:none; border:none; background:none; opacity:.3; padding:6px; color:var(--ink); cursor:pointer; }
   .marker-plain{ flex:none; width:23px; height:23px; border-radius:50%; border:1.5px solid #DAD5C8; background:transparent; cursor:pointer; padding:0; }
@@ -770,7 +776,19 @@ function render(){
       const nameEl = document.createElement('div');
       nameEl.className = 'name';
       nameEl.textContent = r.name;
-      nameWrap.appendChild(nameEl);
+
+      const star = document.createElement('button');
+      star.className = 'star-btn' + (r.favorite ? ' on' : '');
+      star.title = r.favorite ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
+      star.setAttribute('aria-label', star.title);
+      star.innerHTML = '<svg viewBox="0 0 24 24"><polygon points="12 2.5 15 9 22 9.8 16.8 14.6 18.3 21.5 12 18 5.7 21.5 7.2 14.6 2 9.8 9 9"/></svg>';
+      star.onclick = (e)=>{ e.stopPropagation(); r.favorite = !r.favorite; save(); render(); };
+
+      const titleRow = document.createElement('div');
+      titleRow.className = 'title-row';
+      titleRow.appendChild(nameEl);
+      titleRow.appendChild(star);
+      nameWrap.appendChild(titleRow);
       if(r.link || (r.ingredients && r.ingredients.length) || r.steps){
         const hint = document.createElement('div');
         hint.className = 'rlink';
@@ -894,7 +912,7 @@ document.getElementById('saveBtn').onclick = ()=>{
     r.name=name; r.category=category; r.link=link; r.baseServings=baseServings;
     r.steps=steps; r.ingredients=ingredients;
   }else{
-    data.recipes.push({id:uid(), name, category, link, marked:0, markedWork:0, baseServings, steps, ingredients});
+    data.recipes.push({id:uid(), name, category, link, marked:0, markedWork:0, favorite:false, baseServings, steps, ingredients});
   }
   save();
   closeSheet();
@@ -1129,7 +1147,7 @@ function renderSuggestions(list){
     card.querySelector('.s-add').onclick = ()=>{
       const category = CATEGORIES.includes(sr.category) ? sr.category : CATEGORIES[0];
       data.recipes.push({
-        id:uid(), name:sr.name, category, link:'', marked:0, markedWork:0,
+        id:uid(), name:sr.name, category, link:'', marked:0, markedWork:0, favorite:false,
         baseServings:sr.baseServings||2, ingredients:sr.ingredients||[], steps:sr.steps||''
       });
       save();
